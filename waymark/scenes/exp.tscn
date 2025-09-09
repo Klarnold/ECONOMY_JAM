@@ -1,7 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://mjb7q4fb54mr"]
+[gd_scene load_steps=11 format=3 uid="uid://mjb7q4fb54mr"]
 
 [ext_resource type="PackedScene" uid="uid://cabox5fopvvr" path="res://scenes/elements/action_cell/action_cell.tscn" id="2_7gp3u"]
+[ext_resource type="Texture2D" uid="uid://cmbs33iht8c7g" path="res://assets/exp/Free/Menu/Levels/07.png" id="3_8hd41"]
+[ext_resource type="Texture2D" uid="uid://c24anslom4ma6" path="res://assets/exp/Free/Traps/Saw/Off.png" id="3_gtj16"]
 [ext_resource type="PackedScene" uid="uid://b4piyrbbv453e" path="res://scenes/elements/action_spawner/action_spawner.tscn" id="3_vrp6w"]
+[ext_resource type="Script" uid="uid://cxmfv0lio3gub" path="res://scripts/resources/action_res.gd" id="4_rmv6m"]
+[ext_resource type="Texture2D" uid="uid://b53ayw5rqnwnd" path="res://assets/exp/Free/Menu/Levels/16.png" id="5_cybhl"]
+[ext_resource type="Texture2D" uid="uid://ctfsmfle0vcxb" path="res://assets/exp/Free/Menu/Levels/14.png" id="7_g10jr"]
+[ext_resource type="AnimationLibrary" uid="uid://cenab4skydk2w" path="res://assets/anim/animations_orientir.res" id="8_g10jr"]
+
+[sub_resource type="Resource" id="Resource_cybhl"]
+script = ExtResource("4_rmv6m")
+action_type = 0
+money = 0.0
+energy = 0.0
+mood = 0.0
+texture = ExtResource("5_cybhl")
+metadata/_custom_type_script = "uid://cxmfv0lio3gub"
+
+[sub_resource type="Resource" id="Resource_hwmkj"]
+script = ExtResource("4_rmv6m")
+action_type = 0
+money = 0.0
+energy = 0.0
+mood = 0.0
+texture = ExtResource("7_g10jr")
+metadata/_custom_type_script = "uid://cxmfv0lio3gub"
 
 [node name="Exp" type="Node2D"]
 
@@ -10,12 +34,20 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 648.0
+mouse_filter = 2
 
-[node name="ActionCell" parent="Control" instance=ExtResource("2_7gp3u")]
-layout_mode = 1
-offset_left = 272.0
+[node name="ActionCell3" parent="Control" instance=ExtResource("2_7gp3u")]
+layout_mode = 2
+offset_left = 544.0
+offset_top = 64.0
+offset_right = 694.0
+offset_bottom = 214.0
+
+[node name="ActionCell4" parent="Control" instance=ExtResource("2_7gp3u")]
+layout_mode = 2
+offset_left = 280.0
 offset_top = 232.0
-offset_right = 422.0
+offset_right = 430.0
 offset_bottom = 382.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Control"]
@@ -36,3 +68,26 @@ theme_override_constants/separation = 50
 
 [node name="ActionSpawner" parent="Control/ScrollContainer/HBoxContainer" instance=ExtResource("3_vrp6w")]
 layout_mode = 2
+texture = ExtResource("3_gtj16")
+action_res = SubResource("Resource_cybhl")
+main_texture = ExtResource("3_gtj16")
+
+[node name="ActionSpawner2" parent="Control/ScrollContainer/HBoxContainer" instance=ExtResource("3_vrp6w")]
+layout_mode = 2
+texture = ExtResource("3_8hd41")
+action_res = SubResource("Resource_hwmkj")
+main_texture = ExtResource("3_8hd41")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="ActionCell2" parent="Control/VBoxContainer" instance=ExtResource("2_7gp3u")]
+layout_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"animations_orientir": ExtResource("8_g10jr")
+}

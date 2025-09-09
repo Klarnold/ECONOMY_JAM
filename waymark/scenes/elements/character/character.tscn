@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://dewit0q0a01ne"]
+
+[ext_resource type="Script" uid="uid://cw8kh0jrih0ae" path="res://scenes/elements/character/character.gd" id="1_n4jse"]
+
+[node name="Character" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n4jse")
+
+[node name="Body" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Emotion" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5

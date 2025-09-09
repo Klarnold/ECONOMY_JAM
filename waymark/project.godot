@@ -15,6 +15,12 @@ run/main_scene="uid://mjb7q4fb54mr"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*res://globals/scripts/Globals.gd"
+Signals="*res://globals/scripts/Signals.gd"
+GlobalsAction="*res://globals/scripts/GlobalsAction.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/AS2P/plugin.cfg")

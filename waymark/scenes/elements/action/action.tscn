@@ -6,7 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tukrl"]
 size = Vector2(128, 128)
 
-[node name="TextureRect" type="TextureRect"]
+[node name="Action" type="TextureRect"]
+visible = false
 custom_minimum_size = Vector2(100, 100)
 offset_right = 100.0
 offset_bottom = 100.0
@@ -15,10 +16,10 @@ expand_mode = 1
 stretch_mode = 5
 script = ExtResource("2_w5b2v")
 
-[node name="Action" type="Area2D" parent="."]
+[node name="ActionArea" type="Area2D" parent="."]
 unique_name_in_owner = true
 collision_mask = 2
 
-[node name="ActionShape" type="CollisionShape2D" parent="Action"]
+[node name="ActionShape" type="CollisionShape2D" parent="ActionArea"]
 unique_name_in_owner = true
 shape = SubResource("RectangleShape2D_tukrl")

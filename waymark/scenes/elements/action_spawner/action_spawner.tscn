@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b4piyrbbv453e"]
+[gd_scene load_steps=3 format=3 uid="uid://b4piyrbbv453e"]
 
 [ext_resource type="Script" uid="uid://d0hjtb70qhbuk" path="res://scenes/elements/action_spawner/action_spawner.gd" id="1_f2etb"]
 [ext_resource type="Texture2D" uid="uid://co8c4jku52ts3" path="res://icon.svg" id="1_qijfq"]
-[ext_resource type="PackedScene" uid="uid://08d2hdrfdma7" path="res://scenes/elements/action/action.tscn" id="2_gx7n8"]
 
 [node name="ActionSpawner" type="TextureRect"]
 custom_minimum_size = Vector2(150, 150)
@@ -11,4 +10,3 @@ offset_bottom = 40.0
 texture = ExtResource("1_qijfq")
 script = ExtResource("1_f2etb")
 max_chain_length = 20.0
-action_scene = ExtResource("2_gx7n8")
