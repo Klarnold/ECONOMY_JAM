@@ -6,8 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tukrl"]
 size = Vector2(128, 128)
 
-[node name="Action" type="TextureRect"]
+[node name="Action" type="TextureRect" groups=["action"]]
 visible = false
+z_index = 10
 custom_minimum_size = Vector2(100, 100)
 offset_right = 100.0
 offset_bottom = 100.0

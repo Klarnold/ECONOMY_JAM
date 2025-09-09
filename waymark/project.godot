@@ -25,6 +25,10 @@ GlobalsAction="*res://globals/scripts/GlobalsAction.gd"
 
 enabled=PackedStringArray("res://addons/AS2P/plugin.cfg")
 
+[gui]
+
+theme/custom="uid://bi85o5f3auama"
+
 [input]
 
 click={

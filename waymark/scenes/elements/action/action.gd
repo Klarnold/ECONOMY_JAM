@@ -22,14 +22,15 @@ func _gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("click"):
 		dragged = true
 		drag_st_pos = global_position - get_global_mouse_position()
+		z_index += 1
 	# defines an end of a drag
 	elif event.is_action_released("click"):
 		dragged = false
 		if action_cell:
-			top_level = true
-			action_cell.add_action(self)
+			action_cell.prepare_to_add_action(self)
 		else:
 			_free_itself()
+		z_index -= 1
 
 
 func _ready() -> void:

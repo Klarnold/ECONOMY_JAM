@@ -1,6 +1,14 @@
 extends Node
 
 
+enum RESOURCE_TYPE{
+	NONE,
+	MONEY,
+	ENERGY,
+	MOOD
+}
+
+
 var action_instance: Action:
 	set = set_action_instance
 

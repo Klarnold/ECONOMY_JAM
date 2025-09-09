@@ -9,7 +9,7 @@ class_name ActionCell extends TextureRect
 func _gui_input(event: InputEvent) -> void:
 	#print(event)
 	if event.is_action_pressed("click") and Globals.action_instance != null:
-		add_action(Globals.action_instance)
+		prepare_to_add_action(Globals.action_instance)
 
 
 func _ready() -> void:
@@ -27,12 +27,22 @@ func _on_cell_area_entered(action_area: Area2D) -> void:
 	action_area
 
 
-func add_action(new_action: Action, ):
-	
+func prepare_to_add_action(new_action: Action) -> void:
 	if has_node(GlobalsAction.ACTION_NAME) and get_node(GlobalsAction.ACTION_NAME) != new_action:
-			get_node(GlobalsAction.ACTION_NAME).call_deferred("queue_free")
-		#else:
-			#previous_owner.call_deferred("add_action", get_node(GlobalsAction.ACTION_NAME))
+			var current_action: Action = get_node(GlobalsAction.ACTION_NAME)
+			
+			if new_action.get_parent() is ActionCell:
+				var new_action_cell_parent: ActionCell = new_action.get_parent()
+				remove_child(current_action)
+				new_action_cell_parent.remove_child(new_action)
+				new_action_cell_parent.add_action(current_action)
+				
+				add_action(new_action)
+	else:
+		add_action(new_action)
+
+
+func add_action(new_action: Action) -> void:
 	new_action._chained_pos = self.size / 2.0 + self.global_position - new_action.size / 2.0
 	var new_action_parent = new_action.get_parent()
 	if new_action_parent != null:

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcqpyicuvmdhi"]
+
+[ext_resource type="Script" uid="uid://crjlrfvclgjyn" path="res://scenes/ui/ingame_resource_pb/ingame_resource_pb.gd" id="1_n5v6w"]
+
+[node name="IngameResourcePB" type="TextureProgressBar"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_n5v6w")

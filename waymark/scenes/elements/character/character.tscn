@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dewit0q0a01ne"]
+[gd_scene load_steps=5 format=3 uid="uid://dewit0q0a01ne"]
 
 [ext_resource type="Script" uid="uid://cw8kh0jrih0ae" path="res://scenes/elements/character/character.gd" id="1_n4jse"]
+[ext_resource type="Texture2D" uid="uid://jk5elik3ymki" path="res://assets/assets/sprite.png" id="2_jcouy"]
+[ext_resource type="Texture2D" uid="uid://bksm8u7ecoyxn" path="res://assets/assets/eyes.png" id="3_ecvmv"]
+[ext_resource type="Texture2D" uid="uid://b1wmsemnm4vjn" path="res://assets/assets/sad.png" id="4_4c036"]
 
 [node name="Character" type="Control"]
 layout_mode = 3
@@ -18,6 +21,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_jcouy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyes" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ecvmv")
 expand_mode = 1
 stretch_mode = 5
 
@@ -28,5 +43,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("4_4c036")
 expand_mode = 1
 stretch_mode = 5

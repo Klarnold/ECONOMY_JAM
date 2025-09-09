@@ -361,10 +361,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -935.0
-offset_top = 370.0
-offset_right = 265.0
-offset_bottom = 520.0
+offset_left = -912.0
+offset_top = 372.0
+offset_right = 288.0
+offset_bottom = 522.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_bo1jx")
@@ -392,7 +392,6 @@ offset_right = -709.0
 offset_bottom = 445.0
 grow_vertical = 0
 rotation = -1.5708
-metadata/_edit_use_anchors_ = true
 
 [node name="menu_button" type="Panel" parent="bg/actions/Control/menu"]
 layout_mode = 1
@@ -409,7 +408,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_bo1jx")
 theme_override_styles/panel = SubResource("StyleBoxFlat_gycre")
-metadata/_edit_use_anchors_ = true
 
 [node name="menu_overlay" type="Panel" parent="bg/actions/Control/menu"]
 layout_mode = 1
@@ -426,7 +424,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_bo1jx")
 theme_override_styles/panel = ExtResource("8_gycre")
-metadata/_edit_use_anchors_ = true
 
 [node name="menu_overlay2" type="Button" parent="bg/actions/Control/menu"]
 layout_mode = 1
@@ -443,7 +440,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_bo1jx")
 theme_override_styles/normal = SubResource("StyleBoxFlat_pa1oa")
-metadata/_edit_use_anchors_ = true
 
 [node name="submit" type="Button" parent="bg"]
 layout_mode = 1

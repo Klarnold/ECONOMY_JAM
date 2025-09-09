@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cabox5fopvvr"]
+[gd_scene load_steps=3 format=3 uid="uid://cabox5fopvvr"]
 
 [ext_resource type="Script" uid="uid://bh6dv210ulb0d" path="res://scenes/elements/action_cell/action_cell.gd" id="1_xc0f0"]
-[ext_resource type="Texture2D" uid="uid://co8c4jku52ts3" path="res://icon.svg" id="2_q0abv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xc0f0"]
 
@@ -9,7 +8,8 @@
 custom_minimum_size = Vector2(150, 150)
 offset_right = 150.0
 offset_bottom = 150.0
-texture = ExtResource("2_q0abv")
+expand_mode = 1
+stretch_mode = 5
 script = ExtResource("1_xc0f0")
 
 [node name="CellArea" type="Area2D" parent="."]
