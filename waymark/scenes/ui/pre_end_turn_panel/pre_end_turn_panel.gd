@@ -30,7 +30,7 @@ func _get_total_all() -> void:
 	for action: Action in get_tree().get_nodes_in_group("action"):
 		_total_money += action.action_res.money
 		_total_energy += action.action_res.energy
-		_total_money += action.action_res.mood
+		_total_mood += action.action_res.mood
 
 
 func _set_all() -> void:

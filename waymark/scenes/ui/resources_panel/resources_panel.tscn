@@ -7,16 +7,16 @@
 [ext_resource type="Texture2D" uid="uid://brk54qwrr2mr3" path="res://assets/exp/most rounded/progress bar most rounded progress blue.png" id="4_tnyq3"]
 [ext_resource type="PackedScene" uid="uid://cabox5fopvvr" path="res://scenes/elements/action_cell/action_cell.tscn" id="5_t12kl"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rs07v"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uu5s7"]
 texture = ExtResource("2_uu5s7")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tnyq3"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rs07v"]
 texture = ExtResource("3_rs07v")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t12kl"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tnyq3"]
 texture = ExtResource("2_uu5s7")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lb0vk"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t12kl"]
 texture = ExtResource("4_tnyq3")
 
 [node name="ResourcesPanel" type="VBoxContainer"]
@@ -56,8 +56,8 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_styles/background = SubResource("StyleBoxTexture_rs07v")
-theme_override_styles/fill = SubResource("StyleBoxTexture_tnyq3")
+theme_override_styles/background = SubResource("StyleBoxTexture_uu5s7")
+theme_override_styles/fill = SubResource("StyleBoxTexture_rs07v")
 value = 50.0
 resource_type = 2
 _max_value = 100.0
@@ -82,8 +82,8 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_styles/background = SubResource("StyleBoxTexture_t12kl")
-theme_override_styles/fill = SubResource("StyleBoxTexture_lb0vk")
+theme_override_styles/background = SubResource("StyleBoxTexture_tnyq3")
+theme_override_styles/fill = SubResource("StyleBoxTexture_t12kl")
 value = 50.0
 resource_type = 3
 _max_value = 100.0
