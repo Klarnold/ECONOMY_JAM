@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bksm8u7ecoyxn" path="res://assets/assets/eyes.png" id="3_ecvmv"]
 [ext_resource type="Texture2D" uid="uid://b1wmsemnm4vjn" path="res://assets/assets/sad.png" id="4_4c036"]
 
-[node name="Character" type="Control"]
+[node name="Character" type="Control" groups=["character"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

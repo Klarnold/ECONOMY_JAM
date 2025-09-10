@@ -4,4 +4,4 @@ extends Node
 signal finish_turn_button_pressed
 
 
-#signal 
+signal start_new_turn(resources_dict: Dictionary)
