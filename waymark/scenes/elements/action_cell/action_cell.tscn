@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xc0f0"]
 
 [node name="ActionCell" type="TextureRect"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(80, 80)
 offset_right = 150.0
 offset_bottom = 150.0
 expand_mode = 1

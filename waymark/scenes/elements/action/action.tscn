@@ -9,7 +9,7 @@ size = Vector2(128, 128)
 [node name="Action" type="TextureRect" groups=["action"]]
 visible = false
 z_index = 10
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(45, 45)
 offset_right = 100.0
 offset_bottom = 100.0
 texture = ExtResource("1_gev7k")

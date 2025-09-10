@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Globals="*res://globals/scripts/Globals.gd"
 Signals="*res://globals/scripts/Signals.gd"
 GlobalsAction="*res://globals/scripts/GlobalsAction.gd"
+GlobalUi="*res://globals/scenes/global_ui.tscn"
 
 [editor_plugins]
 

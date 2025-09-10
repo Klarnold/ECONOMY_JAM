@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://co8c4jku52ts3" path="res://icon.svg" id="1_qijfq"]
 
 [node name="ActionSpawner" type="TextureRect"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(80, 80)
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_qijfq")
