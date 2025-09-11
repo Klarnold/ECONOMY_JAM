@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b37b7ljgliusv"
-path="res://.godot/imported/shopping_green.png-c7dc70f96e35619ed53f7d524f93dcfa.ctex"
+uid="uid://b1ka6aqlu26ky"
+path="res://.godot/imported/work_hard.png-bb9bd9b55050ac2eca6d92e68f720d97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/shopping_green.png"
-dest_files=["res://.godot/imported/shopping_green.png-c7dc70f96e35619ed53f7d524f93dcfa.ctex"]
+source_file="res://assets/work_hard.png"
+dest_files=["res://.godot/imported/work_hard.png-bb9bd9b55050ac2eca6d92e68f720d97.ctex"]
 
 [params]
 

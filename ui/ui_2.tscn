@@ -1,27 +1,20 @@
-[gd_scene load_steps=32 format=3 uid="uid://cty1t18pif6wu"]
+[gd_scene load_steps=23 format=3 uid="uid://cty1t18pif6wu"]
 
 [ext_resource type="Theme" uid="uid://bi85o5f3auama" path="res://themes/main_theme.tres" id="1_18dcl"]
 [ext_resource type="Texture2D" uid="uid://bemdolbepjgdr" path="res://assets/money.png" id="3_ewta4"]
 [ext_resource type="Texture2D" uid="uid://cn14evvyd006i" path="res://assets/energy.png" id="4_d8hpq"]
-[ext_resource type="FontFile" uid="uid://dowa5qs6lt88" path="res://fonts/raleway/static/Raleway-Regular.ttf" id="4_qskd5"]
+[ext_resource type="StyleBox" uid="uid://dgxvto00dq734" path="res://themes/panel_container.stylebox" id="4_lgwow"]
 [ext_resource type="Texture2D" uid="uid://dhsdgudvgl32u" path="res://assets/happiness.png" id="5_qskd5"]
+[ext_resource type="StyleBox" uid="uid://c31n8ixghuilh" path="res://themes/icon_bg.tres" id="7_4mds0"]
 [ext_resource type="Texture2D" uid="uid://dqwsrbv4kjp6m" path="res://assets/work.png" id="7_n3ujs"]
-[ext_resource type="StyleBox" uid="uid://culho2tlpb08j" path="res://themes/button_overlay.tres" id="7_tnohb"]
 [ext_resource type="Texture2D" uid="uid://c1u0cq77lr2i3" path="res://assets/rest.png" id="9_18dcl"]
 [ext_resource type="FontFile" uid="uid://b1ewttjaehwyy" path="res://fonts/raleway/static/Raleway-Light.ttf" id="9_qhuy6"]
-[ext_resource type="Texture2D" uid="uid://bjn4akcafcxma" path="res://assets/work_green.png" id="9_tj1e5"]
-[ext_resource type="Texture2D" uid="uid://corcgrf1g2agx" path="res://assets/work_purple.png" id="10_2w1f6"]
 [ext_resource type="FontFile" uid="uid://dct4qbukttyj6" path="res://fonts/raleway/static/Raleway-Medium.ttf" id="10_ewta4"]
 [ext_resource type="Texture2D" uid="uid://rd7yqjdjowcw" path="res://assets/shopping.png" id="10_y0lod"]
-[ext_resource type="StyleBox" uid="uid://cn2f8tfconi0v" path="res://themes/resorces_color_theme.tres" id="12_v2d4v"]
-[ext_resource type="Texture2D" uid="uid://cnf3jnimmxhcb" path="res://assets/rest_green.png" id="12_wtnnr"]
-[ext_resource type="Texture2D" uid="uid://7c2hg3ofxwc2" path="res://assets/rest_purple.png" id="13_v2d4v"]
 [ext_resource type="Texture2D" uid="uid://dwrofpvkgvnjt" path="res://assets/sprites/clothes1.png" id="14_y0lod"]
 [ext_resource type="Texture2D" uid="uid://rrkawjjjnovk" path="res://assets/sprites/head.png" id="15_n3ujs"]
 [ext_resource type="Texture2D" uid="uid://bs8m3h532csid" path="res://assets/sprites/clothes2.png" id="15_tj1e5"]
-[ext_resource type="Texture2D" uid="uid://b37b7ljgliusv" path="res://assets/shopping_green.png" id="15_v2d4v"]
 [ext_resource type="Texture2D" uid="uid://cwtt14cf5wf4c" path="res://assets/sprites/clothes3.png" id="16_2w1f6"]
-[ext_resource type="Texture2D" uid="uid://cm3lh0v5mx0b1" path="res://assets/shopping_purple.png" id="16_4mds0"]
 [ext_resource type="Texture2D" uid="uid://ckjsiwjdolwek" path="res://assets/sprites/eyes.png" id="17_htd5j"]
 [ext_resource type="Texture2D" uid="uid://cyhp01hnb5804" path="res://assets/sprites/face_sad.png" id="18_a3py5"]
 [ext_resource type="Texture2D" uid="uid://ccwnimjaal8a1" path="res://assets/sprites/face_neutral.png" id="19_tnohb"]
@@ -29,20 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://jnc34kh2j1b8" path="res://assets/sprites/hair1.png" id="21_ivwsb"]
 [ext_resource type="Texture2D" uid="uid://cmt3qhcm3le6q" path="res://assets/sprites/hair2.png" id="22_lntmu"]
 [ext_resource type="Texture2D" uid="uid://b6tsnastcrgnt" path="res://assets/sprites/hair3.png" id="23_lntmu"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhc1r"]
-bg_color = Color(0.972549, 0.917647, 1, 1)
-corner_radius_top_left = 80
-corner_radius_top_right = 80
-corner_radius_bottom_right = 80
-corner_radius_bottom_left = 80
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qhuy6"]
-bg_color = Color(0.972549, 0.917647, 1, 1)
-corner_radius_top_left = 80
-corner_radius_top_right = 80
-corner_radius_bottom_right = 80
-corner_radius_bottom_left = 80
 
 [node name="UI_2" type="Control"]
 layout_mode = 3
@@ -78,27 +57,28 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = SubResource("StyleBoxFlat_uhc1r")
 
-[node name="Label" type="Label" parent="main_cont/lvl"]
-custom_minimum_size = Vector2(480, 60)
+[node name="name_lvl" type="RichTextLabel" parent="main_cont/lvl"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 10
-size_flags_vertical = 1
 theme = ExtResource("1_18dcl")
-theme_override_colors/font_color = Color(0.164706, 0.0588235, 0.121569, 1)
-theme_override_fonts/font = ExtResource("4_qskd5")
-theme_override_font_sizes/font_size = 40
+theme_override_colors/default_color = Color(0.164706, 0.0588235, 0.121569, 1)
+theme_override_colors/font_selected_color = Color(0.733333, 0.235294, 0.870588, 1)
+theme_override_colors/selection_color = Color(0.756863, 1, 0.384314, 0.764706)
+theme_override_constants/table_v_separation = 20
+theme_override_constants/table_h_separation = 20
+theme_override_fonts/normal_font = ExtResource("9_qhuy6")
+theme_override_fonts/bold_font = ExtResource("10_ewta4")
 text = "Имя Лвл 1"
+scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 3
-clip_text = true
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="main_cont"]
 clip_contents = true
@@ -112,20 +92,14 @@ size_flags_horizontal = 0
 theme_override_constants/separation = 20
 alignment = 1
 
-[node name="resourse_panel" type="Panel" parent="main_cont/HBoxContainer/left_column"]
+[node name="resourse_panel" type="PanelContainer" parent="main_cont/HBoxContainer/left_column"]
 custom_minimum_size = Vector2(0, 400)
 layout_mode = 2
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("7_tnohb")
+theme_override_styles/panel = ExtResource("4_lgwow")
 
 [node name="resources" type="VBoxContainer" parent="main_cont/HBoxContainer/left_column/resourse_panel"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 0.75
-offset_bottom = -3.05176e-05
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 theme_override_constants/separation = 40
 alignment = 1
 
@@ -141,19 +115,22 @@ alignment = 1
 texture = ExtResource("3_ewta4")
 centered = false
 
-[node name="money_label" type="Label" parent="main_cont/HBoxContainer/left_column/resourse_panel/resources/money"]
-custom_minimum_size = Vector2(480, 60)
+[node name="events_label" type="RichTextLabel" parent="main_cont/HBoxContainer/left_column/resourse_panel/resources/money"]
+custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 1
+focus_mode = 2
 theme = ExtResource("1_18dcl")
-theme_override_colors/font_color = Color(0.164706, 0.0588235, 0.121569, 1)
-theme_override_fonts/font = ExtResource("4_qskd5")
-theme_override_font_sizes/font_size = 40
+theme_override_colors/default_color = Color(0.164706, 0.0588235, 0.121569, 1)
+theme_override_colors/font_selected_color = Color(0.733333, 0.235294, 0.870588, 1)
+theme_override_colors/selection_color = Color(0.756863, 1, 0.384314, 0.764706)
+theme_override_constants/table_v_separation = 20
+theme_override_constants/table_h_separation = 20
+theme_override_fonts/normal_font = ExtResource("9_qhuy6")
+theme_override_fonts/bold_font = ExtResource("10_ewta4")
 text = "тут кол-во денег"
+scroll_active = false
 vertical_alignment = 1
-autowrap_mode = 3
-clip_text = true
+selection_enabled = true
 
 [node name="energy" type="HBoxContainer" parent="main_cont/HBoxContainer/left_column/resourse_panel/resources"]
 custom_minimum_size = Vector2(560, 60)
@@ -194,27 +171,15 @@ theme = ExtResource("1_18dcl")
 value = 50.0
 
 [node name="items_[in progress]" type="Control" parent="main_cont/HBoxContainer/left_column/resourse_panel"]
-layout_mode = 1
-anchor_top = 0.75
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -3.05176e-05
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 
-[node name="slots" type="Panel" parent="main_cont/HBoxContainer/left_column"]
+[node name="slots" type="PanelContainer" parent="main_cont/HBoxContainer/left_column"]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("7_tnohb")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="main_cont/HBoxContainer/left_column/slots"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 theme_override_constants/separation = 120
 alignment = 1
 
@@ -224,23 +189,11 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("12_v2d4v")
+theme_override_styles/panel = ExtResource("7_4mds0")
 
 [node name="work_sprite" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/work_bg"]
-visible = false
 position = Vector2(5, 5)
 texture = ExtResource("7_n3ujs")
-centered = false
-
-[node name="work_sprite_green" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/work_bg"]
-visible = false
-position = Vector2(5, 5)
-texture = ExtResource("9_tj1e5")
-centered = false
-
-[node name="work_sprite_purple" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/work_bg"]
-position = Vector2(5, 5)
-texture = ExtResource("10_2w1f6")
 centered = false
 
 [node name="rest_bg" type="Panel" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer"]
@@ -249,23 +202,11 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("12_v2d4v")
+theme_override_styles/panel = ExtResource("7_4mds0")
 
 [node name="rest_sprite" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/rest_bg"]
-visible = false
 position = Vector2(5, 5)
 texture = ExtResource("9_18dcl")
-centered = false
-
-[node name="rest_sprite_green" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/rest_bg"]
-visible = false
-position = Vector2(5, 5)
-texture = ExtResource("12_wtnnr")
-centered = false
-
-[node name="rest_sprite_purple" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/rest_bg"]
-position = Vector2(5, 5)
-texture = ExtResource("13_v2d4v")
 centered = false
 
 [node name="shopping_bg" type="Panel" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer"]
@@ -274,23 +215,11 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("12_v2d4v")
+theme_override_styles/panel = ExtResource("7_4mds0")
 
 [node name="shopping_sprite" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/shopping_bg"]
-visible = false
 position = Vector2(5, 5)
 texture = ExtResource("10_y0lod")
-centered = false
-
-[node name="shopping_sprite_green" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/shopping_bg"]
-position = Vector2(5, 5)
-texture = ExtResource("15_v2d4v")
-centered = false
-
-[node name="shopping_sprite_purple" type="Sprite2D" parent="main_cont/HBoxContainer/left_column/slots/HBoxContainer/shopping_bg"]
-visible = false
-position = Vector2(5, 5)
-texture = ExtResource("16_4mds0")
 centered = false
 
 [node name="central" type="VBoxContainer" parent="main_cont/HBoxContainer"]
@@ -370,20 +299,14 @@ custom_minimum_size = Vector2(600, 800)
 layout_mode = 2
 alignment = 1
 
-[node name="events_panel" type="Panel" parent="main_cont/HBoxContainer/right_column"]
+[node name="events_panel" type="PanelContainer" parent="main_cont/HBoxContainer/right_column"]
 custom_minimum_size = Vector2(0, 600)
 layout_mode = 2
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("7_tnohb")
+theme_override_styles/panel = ExtResource("4_lgwow")
 
 [node name="events_label" type="RichTextLabel" parent="main_cont/HBoxContainer/right_column/events_panel"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.02
-anchor_right = 0.98
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 focus_mode = 2
 theme = ExtResource("1_18dcl")
 theme_override_colors/default_color = Color(0.164706, 0.0588235, 0.121569, 1)
@@ -393,8 +316,6 @@ theme_override_constants/table_v_separation = 20
 theme_override_constants/table_h_separation = 20
 theme_override_fonts/normal_font = ExtResource("9_qhuy6")
 theme_override_fonts/bold_font = ExtResource("10_ewta4")
-theme_override_font_sizes/normal_font_size = 70
-theme_override_font_sizes/bold_font_size = 70
 text = "- пример текста"
 fit_content = true
 scroll_following = true
@@ -410,7 +331,6 @@ alignment = 1
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = SubResource("StyleBoxFlat_qhuy6")
 metadata/_edit_use_anchors_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="main_cont/HBoxContainer2/menu_button"]
@@ -431,23 +351,11 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("12_v2d4v")
+theme_override_styles/panel = ExtResource("7_4mds0")
 
 [node name="work_sprite" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/work_bg"]
-visible = false
 position = Vector2(5, 5)
 texture = ExtResource("7_n3ujs")
-centered = false
-
-[node name="work_sprite_green" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/work_bg"]
-visible = false
-position = Vector2(5, 5)
-texture = ExtResource("9_tj1e5")
-centered = false
-
-[node name="work_sprite_purple" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/work_bg"]
-position = Vector2(5, 5)
-texture = ExtResource("10_2w1f6")
 centered = false
 
 [node name="rest_bg" type="Panel" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer"]
@@ -456,23 +364,11 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("12_v2d4v")
+theme_override_styles/panel = ExtResource("7_4mds0")
 
 [node name="rest_sprite" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/rest_bg"]
-visible = false
 position = Vector2(5, 5)
 texture = ExtResource("9_18dcl")
-centered = false
-
-[node name="rest_sprite_green" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/rest_bg"]
-visible = false
-position = Vector2(5, 5)
-texture = ExtResource("12_wtnnr")
-centered = false
-
-[node name="rest_sprite_purple" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/rest_bg"]
-position = Vector2(5, 5)
-texture = ExtResource("13_v2d4v")
 centered = false
 
 [node name="shopping_bg" type="Panel" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer"]
@@ -481,30 +377,17 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = ExtResource("12_v2d4v")
+theme_override_styles/panel = ExtResource("7_4mds0")
 
 [node name="shopping_sprite" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/shopping_bg"]
-visible = false
 position = Vector2(5, 5)
 texture = ExtResource("10_y0lod")
-centered = false
-
-[node name="shopping_sprite_green" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/shopping_bg"]
-position = Vector2(5, 5)
-texture = ExtResource("15_v2d4v")
-centered = false
-
-[node name="shopping_sprite_purple" type="Sprite2D" parent="main_cont/HBoxContainer2/menu_button/HBoxContainer/shopping_bg"]
-visible = false
-position = Vector2(5, 5)
-texture = ExtResource("16_4mds0")
 centered = false
 
 [node name="actions_menu" type="Panel" parent="main_cont/HBoxContainer2"]
 custom_minimum_size = Vector2(1200, 0)
 layout_mode = 2
 theme = ExtResource("1_18dcl")
-theme_override_styles/panel = SubResource("StyleBoxFlat_uhc1r")
 
 [node name="submit" type="Button" parent="main_cont/HBoxContainer2"]
 custom_minimum_size = Vector2(150, 150)

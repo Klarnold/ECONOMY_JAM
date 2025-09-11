@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://corcgrf1g2agx"
-path="res://.godot/imported/work_purple.png-c588c7fb82aec07e8fdb97b522561319.ctex"
+uid="uid://cc61pdwm81gan"
+path="res://.godot/imported/rest_play_games.png-a9b72911fe9a88dbc7642b716c927294.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/work_purple.png"
-dest_files=["res://.godot/imported/work_purple.png-c588c7fb82aec07e8fdb97b522561319.ctex"]
+source_file="res://assets/rest_play_games.png"
+dest_files=["res://.godot/imported/rest_play_games.png-a9b72911fe9a88dbc7642b716c927294.ctex"]
 
 [params]
 
