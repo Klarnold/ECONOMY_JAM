@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnf3jnimmxhcb"
-path="res://.godot/imported/rest_green.png-ddd1e7390e34688b78b94b27bb72caa8.ctex"
+uid="uid://ce3cmt614j7tv"
+path="res://.godot/imported/shopping_tech.png-abe09e0a2fa09b9c39787f650dca3b7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/rest_green.png"
-dest_files=["res://.godot/imported/rest_green.png-ddd1e7390e34688b78b94b27bb72caa8.ctex"]
+source_file="res://assets/shopping_tech.png"
+dest_files=["res://.godot/imported/shopping_tech.png-abe09e0a2fa09b9c39787f650dca3b7a.ctex"]
 
 [params]
 

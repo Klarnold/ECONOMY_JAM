@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm3lh0v5mx0b1"
-path="res://.godot/imported/shopping_purple.png-bf57f769b635b14ecdd0fa9ffdcec943.ctex"
+uid="uid://bnhen4qaewt4g"
+path="res://.godot/imported/rest_eat_out.png-17afb560c4941dbf3557feb7201b02bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/shopping_purple.png"
-dest_files=["res://.godot/imported/shopping_purple.png-bf57f769b635b14ecdd0fa9ffdcec943.ctex"]
+source_file="res://assets/rest_eat_out.png"
+dest_files=["res://.godot/imported/rest_eat_out.png-17afb560c4941dbf3557feb7201b02bf.ctex"]
 
 [params]
 
